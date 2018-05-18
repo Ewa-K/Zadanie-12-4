@@ -1,115 +1,26 @@
-body {
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+body { margin: 0 auto; width: 100vw; height: 100vh; background-repeat: no-repeat; background-size: cover; }
 
-h1 {
-  color: #fff;
-  text-align: center;
-  text-shadow: 2px 2px #1f1b1b;
-  background: #38160aba;
-  margin: 0;
-  line-height: 50px;
-}
+h1 { color: #fff; text-align: center; text-shadow: 2px 2px #1f1b1b; background: #38160aba; margin: 0; line-height: 50px; }
 
-button {
-  border-radius: 4px;
-}
+button { border-radius: 4px; }
 
-.create-column {
-  background-image: radial-gradient(circle, #79ee6e, #67c952, #54a538, #41831f, #2d6204);
-  border-color: #ff57222e;
-  color: #fff;
-  outline: none;
-  font-weight: bold;
-  font-size: 14px;
-  width: 20%;
-  margin: 25px 40% 20px 40%;
-  padding: 5px 0;
-}
+.create-column { background-image: radial-gradient(circle, #79ee6e, #67c952, #54a538, #41831f, #2d6204); border-color: #ff57222e; color: #fff; outline: none; font-weight: bold; font-size: 14px; width: 20%; margin: 25px 40% 20px 40%; padding: 5px 0; }
 
-.column-container {
-  max-width: 1200px;
-  -ms-flex-pack: center;
-      justify-content: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-}
+.column-container { max-width: 1200px; -ms-flex-pack: center; justify-content: center; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 auto; }
 
-.column-container .column {
-  margin: 10px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background: #ffc107b8;
-  border-radius: 6px;
-  box-shadow: 1.5px 1.5px #000;
-  min-width: 150px;
-}
+.column-container .column { margin: 10px; -ms-flex-wrap: wrap; flex-wrap: wrap; background: #ffc107b8; border-radius: 6px; box-shadow: 1.5px 1.5px #000; min-width: 150px; }
 
-.column-container .column h2 {
-  display: inline-block;
-  text-align: center;
-  margin: 5px 5px;
-  text-shadow: 1px 1px #f3eef0;
-  color: #022703;
-}
+.column-container .column h2 { display: inline-block; text-align: center; margin: 5px 5px; text-shadow: 1px 1px #f3eef0; color: #022703; }
 
-.column-container .column .btn-delete {
-  float: right;
-  border: none;
-  background-color: #ffc0cb0a;
-  outline: none;
-  font-size: 13px;
-}
+.column-container .column .btn-delete { float: right; border: none; background-color: #ffc0cb0a; outline: none; font-size: 13px; }
 
-.column-container .column .btn-delete:hover {
-  background-color: #926f3c29;
-}
+.column-container .column .btn-delete:hover { background-color: #926f3c29; }
 
-.column-container .column .column-add-card {
-  display: block;
-  margin: 5px 3% 0px 3%;
-  width: 94%;
-  background-image: radial-gradient(circle, #79ee6e, #67c952, #54a538, #41831f, #2d6204);
-  border-color: #f1cb955e;
-  color: #fff;
-  outline: none;
-  font-weight: bold;
-  font-size: 13px;
-}
+.column-container .column .column-add-card { display: block; margin: 5px 3% 0px 3%; width: 94%; background-image: radial-gradient(circle, #79ee6e, #67c952, #54a538, #41831f, #2d6204); border-color: #f1cb955e; color: #fff; outline: none; font-weight: bold; font-size: 13px; }
 
-.column-container .column ul {
-  list-style: none;
-  padding: 0 0;
-}
+.column-container .column ul { list-style: none; padding: 0 0; }
 
-.column-container .column ul .card {
-  background: #fff;
-  border-radius: 6px;
-  margin: 5px 3% 0px 3%;
-  box-shadow: 2px 2px #f1cb95;
-  text-align: center;
-  padding: 1px 0px 1px 5px;
-  font-size: 14px;
-}
+.column-container .column ul .card { background: #fff; border-radius: 6px; margin: 5px 3% 0px 3%; box-shadow: 2px 2px #f1cb95; text-align: center; padding: 1px 0px 1px 5px; font-size: 14px; }
 
-@media (max-width: 767px) {
-  .column-container {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    width: 95vw;
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-  .create-column {
-    width: 50%;
-    margin-left: 25%;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 767px) { .column-container { -ms-flex-direction: column; flex-direction: column; width: 95vw; -ms-flex-pack: center; justify-content: center; }
+  .create-column { width: 50%; margin-left: 25%; } }
