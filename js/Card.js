@@ -11,6 +11,8 @@ function Card(id, name) {
         var cardDeleteBtn = $('<button class="btn-delete">x</button>');
         var cardDescription = $('<p class="card-description"></p>');
 
+        card.attr('data-id', self.id)
+
         cardDeleteBtn.click(function() {
             self.removeCard();
         });
@@ -28,7 +30,7 @@ Card.prototype = {
             url: baseUrl + '/card/' + self.id,
             method: 'DELETE',
             success: function() {
-                self.$element.remove();
+                self.element.remove();
             }
         });
     }

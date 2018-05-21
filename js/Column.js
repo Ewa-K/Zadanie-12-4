@@ -3,6 +3,8 @@ function Column(id, name) {
 
     this.id = id;
     this.name = name || 'No name given';
+    this.element = createColumn();
+    this.cards = []
 
     function createColumn() {
         // TWORZENIE NOWYCH WĘZŁÓW
@@ -12,12 +14,14 @@ function Column(id, name) {
         var columnDelete = $('<button class="btn-delete">x</button>');
         var columnAddCard = $('<button class="column-add-card">Add a card</button>');
 
+        column.attr('data-id', self.id)
+
         // PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
         columnDelete.click(function() {
             self.deleteColumn();
         });
 
-        $columnAddCard.click(function(event) {
+        columnAddCard.click(function(event) {
             var cardName = prompt("Enter the name of the card");
             event.preventDefault();
             $.ajax({
@@ -45,6 +49,7 @@ function Column(id, name) {
 Column.prototype = {
     createCard: function(card) {
         this.element.children('ul').append(card.element);
+        this.cards.push(card)
     },
     deleteColumn: function() {
         var self = this;
@@ -53,6 +58,7 @@ Column.prototype = {
             method: 'DELETE',
             success: function(response) {
                 self.element.remove();
+                board.colums = board.colums.filter((col) => col.id != self.id)
             }
         });
     }
